@@ -152,6 +152,7 @@ igor.teixeirabelem@georgebrown.ca
 |---|---|
 |react-bootstrap|Core css design of the project|
 |socket.io-client|requirement|
+|Axios|communicate frontend to backend|
 
 #### Back end
 |Dependency|Used for|
