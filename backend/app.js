@@ -60,7 +60,7 @@ mongoose.connect(conf.cloud, {useNewUrlParser: true, useUnifiedTopology: true}).
  * 
  *************************/
 
-let users = ['System', 'The Admin'];
+let users = ['System', 'Admin'];
 
 io.on("connection", socket => {
     console.log(`A new client connected - (id) : ${socket.id}`);

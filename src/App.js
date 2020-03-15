@@ -18,7 +18,7 @@ export default class App  extends React.Component {
     username: "",
     messages: [{
       msg: "You need to be in a room and logged-in in order to be able to send messages. Please be kind and tame to others in the room.",
-      by: "The Admin",
+      by: "Admin",
       _id: 0
     }],
     users: [],
@@ -103,7 +103,10 @@ export default class App  extends React.Component {
     this.setState({messages: [...this.state.messages, {msg: `You're now listening  @${e.target.name} room`, by: "System", _id: this.ctr+=1}]})
     
   }
-
+  componentDidUpdate(){
+    let msgArea = document.getElementById("messageList");
+    msgArea.scrollTop = msgArea.scrollHeight;
+  }
   
 
   render(){
@@ -118,7 +121,7 @@ export default class App  extends React.Component {
                 <div className="card-header">
                   <h5 style={{'display':'inline-block'}}>Messages</h5>
                 </div>
-                <div className="messageList">
+                <div className="messageList" id="messageList">
                   {this.state.messages.map(message => <Messages key={message._id} message={message} user={this.state.username}></Messages>)}
                   <div>{' '}</div>
                 </div>
