@@ -13,7 +13,7 @@ export default class Messages extends React.Component{
 
     render() {
         return(
-            <Card border={this.state.isSystem ? 'danger' : 'light'} className={ this.state.isMine ? 'message-r' : 'message-l'} >
+            <Card border={this.state.isSystem ? 'danger' : 'light'} className={ this.state.isMine ? 'message-l' : 'message-r'} >
                 <Card.Body>
                     <blockquote className="blockquote mb-0">
                         <p>
