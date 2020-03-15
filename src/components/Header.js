@@ -47,7 +47,7 @@ class Header extends React.Component {
                         <div className="input-group-text">@</div>
                         <input disabled type="text" style={{"maxWidth":"10vw"}} defaultValue={this.state.username}></input>
                     </div>
-                    <Button onClick={this.logout}>Sign Out</Button>
+                    <Button className="send-btn" onClick={this.logout}>Sign Out</Button>
                 </div>
             </Container>
         )
