@@ -36,9 +36,8 @@ export default class Compose extends React.Component {
                 <div className="input-group">
                     <Form.Control value={this.state.msg} name="msg" 
                     onChange={this.onChange} as="textarea" rows="3" 
-                    onKeyDown={this.handleKeyDown}
-                    className="left-rnd type-msg" />
-                    <Button classname="input-group-text send-btn" type="submit">Submit</Button>
+                    onKeyDown={this.handleKeyDown}/>
+                    <Button type="submit">Submit</Button>
                 </div>
             </Form>
         )
