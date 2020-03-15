@@ -18,7 +18,7 @@ export default class App  extends React.Component {
     username: "",
     messages: [{
       msg: "You need to be in a room and logged-in in order to be able to send messages. Please be kind and tame to others in the room.",
-      by: "The Admin",
+      by: "Admin",
       _id: 0
     }],
     users: [],

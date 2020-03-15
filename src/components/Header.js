@@ -94,7 +94,7 @@ class Header extends React.Component {
     render() {
         return(
             <Navbar bg="light" expand="lg">
-                <Navbar.Brand>Weebiee Chat-App</Navbar.Brand>
+                <Navbar.Brand>Team 2-N-E-1 Chat-App</Navbar.Brand>
                 <this.checkLoggedIn />
             </Navbar>
         )

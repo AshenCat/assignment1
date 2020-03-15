@@ -37,7 +37,7 @@ export default class Compose extends React.Component {
                     <Form.Control value={this.state.msg} name="msg" 
                     onChange={this.onChange} as="textarea" rows="3" 
                     onKeyDown={this.handleKeyDown}/>
-                    <Button type="submit">Submit</Button>
+                    <Button className="send-btn" type="submit">Submit</Button>
                 </div>
             </Form>
         )
